@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right,rgb(97, 162, 162) , rgb(6, 132, 132));
+}
+
+section{
+    height: 100vh;
+    color: white;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 28em;
+    padding: 15px 20px;
+    background-color: teal;
+    box-shadow: 6px 6px 8px rgb(50,49,49);
+    border-radius: 8px;
+}
+form label{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+form .laclass{
+    margin-top: 20px;
+}
+form div input{
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 6px 6px 6px rgb(50,49,49);
+    border: none;
+    padding: 12px 10px;
+    font-size: 1em
+}
+.ent{
+    margin-top: 8px;
+}
+form div input:focus, form div select:focus{
+    outline: none;
+}
+form div select{
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 8px;
+    box-shadow: 6px 6px 6px rgb(50,49,49);
+}
+form input[type="submit"]{
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+    border: 1px solid orange;
+    padding: 8px 15px;
+    margin-top: 20px;
+}
+form input[type="submit"]:hover{
+    background-color: rgb(218, 143, 4);
+    border: 1px solid rgb(218, 143, 4);
+}
+form .ent{
+    display: flex;
+    gap: 7px;
+    flex: 1;
+}
+#lon, #mas, #temp{
+    margin-top: 8px;
+}
+#ecran{
+    margin-top: -32px;
+    margin-bottom: 10px;
+}
+.ecran{
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 6px 6px 6px rgb(50,49,49);
+    margin-top: 8px;
+}
+
