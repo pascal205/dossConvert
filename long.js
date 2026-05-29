@@ -55,19 +55,6 @@ document.getElementById("convertir").addEventListener("click", function(event){
                         result = (longueur*0.01)/0.001;
                         ecran.value = result + " milimètre"
                         break;
-                    case "cm":
-                        result = longueur;
-                        ecran.value = result + " centimètre"
-                        break;
-                    case "cm":
-                        result = longueur;
-                        ecran.value = result + " centimètre"
-                        break;
-                    case "cm":
-                        result = longueur;
-                        ecran.value = result + " centimètre"
-                        break;
-                
                     default:
                         break;
                 }
