@@ -71,10 +71,10 @@ form input[type="submit"]:hover{
     color: black;
     text-decoration: none;
     font-size: 1.2em;
-    cursor: default;
 }
 .choix:hover{
     background-color: rgb(239, 233, 233);
+    cursor: pointer;
 }
 h1{
     margin-bottom: 30px;
