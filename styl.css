@@ -6,6 +6,27 @@ body{
     background: linear-gradient(to right,rgb(97, 162, 162) , rgb(6, 132, 132));
 }
 
+
+.menu{
+    display: flex;
+    justify-content: right;
+    padding: 10px;
+}
+.accueil{
+    background: linear-gradient(#60a0a0, #24a7a7);
+    padding: 8px 10px;
+    border: 2px solid #245656;
+    text-decoration: none;
+    color: white;
+    border-radius: 32px;
+    display: flex;
+    transition: 0.3s;
+    gap: 3px;
+}
+.accueil:hover{
+    gap: 8px;
+    letter-spacing: 1.5px;
+}
 section{
     height: 100vh;
     color: white;
