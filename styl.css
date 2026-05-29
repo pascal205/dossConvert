@@ -72,6 +72,7 @@ form .ent{
 #ecran{
     margin-top: -32px;
     margin-bottom: 10px;
+    pointer-events: none;
 }
 .ecran{
     width: 100%;
