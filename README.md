@@ -1,30 +1,34 @@
-# dossConvert 🔄
+# Convertor 🔄
 
-**dossConvert** est une application web simple et intuitive permettant d'effectuer rapidement des conversions entre différentes unités de mesure.
+**Convertor** est une application web de conversion d'unités de mesure, conçue pour permettre de convertir rapidement et simplement différentes valeurs entre plusieurs unités.
 
-Le projet a été réalisé dans le cadre d'un exercice pratique en développement web, avec pour objectif de mettre en pratique **HTML, CSS et JavaScript**, notamment la manipulation du DOM, la gestion des événements, les conditions et les algorithmes de conversion.
+Le projet a été développé avec **HTML, CSS et JavaScript**, dans le but de mettre en pratique les fondamentaux du développement web, notamment la manipulation du DOM, la gestion des événements, la validation des données et l'utilisation des structures conditionnelles.
 
 ---
 
 ## 📌 Présentation
 
-dossConvert permet à l'utilisateur de sélectionner une catégorie de mesure, de saisir une valeur et de choisir les unités de départ et d'arrivée afin d'obtenir instantanément le résultat de la conversion.
+Convertor propose une interface simple permettant à l'utilisateur de :
 
-L'application est actuellement organisée autour de trois catégories principales :
+1. sélectionner une catégorie de mesure ;
+2. saisir une valeur ;
+3. choisir l'unité de départ ;
+4. choisir l'unité d'arrivée ;
+5. obtenir automatiquement le résultat de la conversion.
+
+L'application prend actuellement en charge trois catégories :
 
 * 📏 **Longueur**
 * ⚖️ **Masse**
 * 🌡️ **Température**
 
-L'objectif est de proposer une interface claire, rapide et facile à utiliser tout en conservant une structure de code simple et pédagogique.
-
 ---
 
 ## ✨ Fonctionnalités
 
-### 📏 Conversion des longueurs
+### 📏 Longueur
 
-Le convertisseur prend en charge différentes unités de longueur, notamment :
+Convertor permet d'effectuer des conversions entre plusieurs unités de longueur :
 
 * Kilomètre (km)
 * Centimètre (cm)
@@ -33,11 +37,11 @@ Le convertisseur prend en charge différentes unités de longueur, notamment :
 * Pied (ft)
 * Pouce (in)
 
-Les conversions sont effectuées automatiquement à partir de l'unité sélectionnée par l'utilisateur.
+Les conversions sont calculées automatiquement en fonction de l'unité de départ et de l'unité d'arrivée.
 
-### ⚖️ Conversion des masses
+### ⚖️ Masse
 
-La catégorie Masse permet de convertir différentes unités telles que :
+La catégorie Masse prend en charge les unités suivantes :
 
 * Kilogramme (kg)
 * Gramme (g)
@@ -47,38 +51,36 @@ La catégorie Masse permet de convertir différentes unités telles que :
 * Once (oz)
 * Stone (st)
 
-Le kilogramme sert d'unité de référence pour simplifier les différentes conversions.
+Le kilogramme est utilisé comme unité de référence afin de simplifier les conversions.
 
-### 🌡️ Conversion des températures
+### 🌡️ Température
 
-Le convertisseur de température prend en charge :
+Convertor permet également de convertir les températures entre :
 
 * Celsius (°C)
 * Fahrenheit (°F)
 * Kelvin (K)
 
-Les formules appropriées sont utilisées pour chaque combinaison d'unités.
+Les formules mathématiques appropriées sont appliquées selon les unités sélectionnées.
 
 ---
 
 ## 🛠️ Technologies utilisées
 
-Le projet utilise principalement les technologies web fondamentales :
-
 | Technologie    | Utilisation                             |
 | -------------- | --------------------------------------- |
-| **HTML5**      | Structure des pages                     |
-| **CSS3**       | Mise en forme et interface utilisateur  |
+| **HTML5**      | Structure des interfaces                |
+| **CSS3**       | Design et mise en forme                 |
 | **JavaScript** | Logique des conversions et interactions |
 
-Aucune bibliothèque ou framework JavaScript externe n'est nécessaire pour utiliser l'application.
+Le projet ne nécessite actuellement aucun framework ou bibliothèque JavaScript externe.
 
 ---
 
 ## 📂 Structure du projet
 
 ```text
-dossConvert/
+Convertor/
 │
 ├── index.html
 │
@@ -99,152 +101,160 @@ dossConvert/
 
 ### Description des fichiers
 
-**`index.html`**
-Page d'accueil permettant d'accéder aux différentes catégories de conversion.
-
-**`longueur.html`**
-Interface dédiée aux conversions de longueur.
-
-**`long.js`**
-Contient la logique JavaScript permettant d'effectuer les conversions de longueur.
-
-**`masse.html`**
-Interface dédiée aux conversions de masse.
-
-**`masse.js`**
-Contient les différentes opérations de conversion des masses.
-
-**`temp.html`**
-Interface dédiée aux conversions de température.
-
-**`temp.js`**
-Contient les formules et la logique de conversion des températures.
-
-**`style.css` / `styl.css`**
-Fichiers contenant les règles CSS utilisées pour la présentation et la mise en forme de l'application.
+| Fichier         | Description                              |
+| --------------- | ---------------------------------------- |
+| `index.html`    | Page d'accueil de l'application          |
+| `longueur.html` | Interface de conversion des longueurs    |
+| `long.js`       | Logique des conversions de longueur      |
+| `masse.html`    | Interface de conversion des masses       |
+| `masse.js`      | Logique des conversions de masse         |
+| `temp.html`     | Interface de conversion des températures |
+| `temp.js`       | Logique des conversions de température   |
+| `style.css`     | Styles généraux de l'application         |
+| `styl.css`      | Styles complémentaires de l'interface    |
 
 ---
 
-## 🚀 Installation
+## ⚙️ Installation
 
-Aucune installation particulière n'est nécessaire.
+Convertor est une application web statique. Aucune installation de dépendances n'est nécessaire.
 
-### 1. Cloner le dépôt
+### Cloner le projet
 
 ```bash
 git clone https://github.com/pascal205/dossConvert.git
 ```
 
-### 2. Accéder au projet
+### Accéder au dossier
 
 ```bash
 cd dossConvert
 ```
 
-### 3. Lancer l'application
+### Lancer l'application
 
-Il suffit d'ouvrir `index.html` dans un navigateur web moderne.
+Ouvrez simplement le fichier :
 
-Vous pouvez également utiliser l'extension **Live Server** de Visual Studio Code pour lancer le projet localement.
+```text
+index.html
+```
+
+dans un navigateur web moderne.
+
+Pour une meilleure expérience de développement, le projet peut également être lancé avec **Live Server** dans Visual Studio Code.
 
 ---
 
-## 🧮 Principe de fonctionnement
+## 🔄 Fonctionnement
 
-Le fonctionnement général du convertisseur repose sur trois étapes :
+Le principe général de l'application est le suivant :
 
 ```text
-Valeur saisie
-      ↓
-Unité de départ
-      ↓
-Conversion
-      ↓
-Unité d'arrivée
-      ↓
-Résultat
+┌─────────────────────┐
+│    Valeur saisie    │
+└──────────┬──────────┘
+           ↓
+┌─────────────────────┐
+│   Unité de départ   │
+└──────────┬──────────┘
+           ↓
+┌─────────────────────┐
+│     Conversion      │
+└──────────┬──────────┘
+           ↓
+┌─────────────────────┐
+│   Unité d'arrivée   │
+└──────────┬──────────┘
+           ↓
+┌─────────────────────┐
+│      Résultat       │
+└─────────────────────┘
 ```
 
-Pour les longueurs et les masses, une **unité de référence** permet de simplifier les calculs.
+Pour les conversions de longueur et de masse, une unité de référence est utilisée afin de faciliter les calculs.
 
-### Exemple — masse
+### Exemple
+
+Pour une conversion de masse :
 
 ```text
 Livre
-  ↓
+   ↓
 Kilogramme
-  ↓
+   ↓
 Gramme
 ```
 
-### Exemple — longueur
+Pour une conversion de longueur :
 
 ```text
 Kilomètre
-  ↓
+   ↓
 Mètre
-  ↓
+   ↓
 Centimètre
 ```
 
-Pour les températures, les conversions utilisent directement les formules mathématiques correspondantes entre Celsius, Fahrenheit et Kelvin.
+Les températures utilisent quant à elles les formules spécifiques entre Celsius, Fahrenheit et Kelvin.
 
 ---
 
 ## ✅ Validation des données
 
-L'application vérifie également les valeurs saisies afin d'éviter certaines erreurs.
+L'application intègre également des contrôles sur les valeurs saisies.
 
-Par exemple :
+Elle peut notamment détecter :
 
-* champ vide ;
-* valeur qui n'est pas numérique ;
-* valeur incompatible avec certaines unités.
+* un champ vide ;
+* une valeur qui n'est pas numérique ;
+* une valeur invalide pour certaines unités.
 
-Lorsqu'une erreur est détectée, un message d'information est affiché à l'utilisateur.
-
----
-
-## 🎯 Objectifs pédagogiques
-
-Ce projet permet notamment de mettre en pratique :
-
-* La manipulation du **DOM**
-* Les variables JavaScript
-* Les conditions `if / else`
-* Les structures `switch`
-* Les fonctions
-* Les événements JavaScript
-* La récupération des valeurs d'un formulaire
-* La validation des données
-* Les opérations mathématiques
-* La manipulation des propriétés CSS avec JavaScript
-* L'organisation d'un petit projet web
+Lorsqu'une erreur est détectée, un message est affiché afin d'informer l'utilisateur.
 
 ---
 
-## 🔮 Améliorations prévues
+## 🎯 Objectifs du projet
 
-Plusieurs évolutions peuvent être ajoutées au projet :
+Ce projet permet de pratiquer plusieurs notions fondamentales de JavaScript :
 
-* [ ] Ajouter davantage d'unités de mesure
-* [ ] Améliorer le design responsive
-* [ ] Ajouter un bouton permettant d'inverser les unités
+* Variables et constantes
+* Conditions `if / else`
+* Structures `switch`
+* Fonctions
+* Événements
+* Manipulation du DOM
+* Récupération des valeurs des formulaires
+* Validation des données
+* Opérations mathématiques
+* Manipulation des propriétés CSS avec JavaScript
+* Organisation d'un projet web
+
+Convertor constitue également une base pour expérimenter progressivement de nouvelles fonctionnalités et améliorer la qualité du code.
+
+---
+
+## 🚀 Améliorations futures
+
+Plusieurs fonctionnalités peuvent être ajoutées au projet :
+
+* [ ] Ajouter de nouvelles unités de mesure
+* [ ] Ajouter un bouton pour inverser les unités
 * [ ] Ajouter un historique des conversions
-* [ ] Ajouter l'arrondissement configurable des résultats
+* [ ] Améliorer la précision et l'arrondissement des résultats
 * [ ] Améliorer les messages d'erreur
-* [ ] Ajouter une interface plus moderne
-* [ ] Ajouter d'autres catégories de conversion
-* [ ] Optimiser et factoriser le code JavaScript
+* [ ] Optimiser le code JavaScript
+* [ ] Améliorer davantage le responsive design
+* [ ] Ajouter de nouvelles catégories de conversion
+* [ ] Ajouter un mode sombre
 * [ ] Déployer l'application en ligne
 
 ---
 
-## 🌐 Dépôt
+## 🌐 Projet
 
 Le code source du projet est disponible sur GitHub :
 
-**https://github.com/pascal205/dossConvert**
+[Dépôt GitHub de Convertor](https://github.com/pascal205/dossConvert?utm_source=chatgpt.com)
 
 ---
 
@@ -252,10 +262,10 @@ Le code source du projet est disponible sur GitHub :
 
 **AMETEPE Pascal**
 
-Projet réalisé dans le cadre de l'apprentissage et de la pratique du développement web.
+Projet personnel réalisé dans le cadre de l'apprentissage et de la pratique du développement web.
 
 ---
 
 ## 📄 Licence
 
-Ce projet est un projet personnel à vocation pédagogique.
+Ce projet est actuellement un projet personnel à vocation pédagogique.
